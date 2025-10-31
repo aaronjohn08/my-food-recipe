@@ -24,14 +24,23 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
-                    <div class="card" style="width:185px; height:200px; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="max-height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 
@@ -71,15 +80,24 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
 
-                    <div class="card" style="width:185px; height:200px; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 
@@ -119,15 +137,24 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
 
-                    <div class="card" style="width: 185px;; height:200px; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 
@@ -167,15 +194,24 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
 
-                    <div class="card" style="width:200px; height: 185px;; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 
@@ -215,15 +251,24 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
 
-                    <div class="card" style="width: 185px;; height:200px; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 
@@ -263,15 +308,24 @@
                     $categoryName = $row['category_name'];
                     $recipeImage = $row['recipe_image'];
                     $recipeName = $row['recipe_name'];
+                    $recipeIngredients = $row['recipe_ingredients'];
+                    $recipeProcedure = $row['recipe_procedure'];
                     ?>
 
-                    <div class="card" style="width:185px; height:200px; margin: 20px">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 120px;">
-                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 120px; max-height: 180px;">
+                    <div class="card" style="width:300px; margin: 20px">
+                        <div class="d-flex justify-content-center align-items-center" style="max-height: 180px; overflow:hidden;">
+                            <img  src="http://localhost/my-food-recipe/uploads/<?php echo $recipeImage ?>" class="card-img-top mt-1" alt="Recipe" style="max-width: 280px; max-height: 180px; object-fit: cover;">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <h6 class="card-title text-center mb-1"><strong><?php echo htmlspecialchars($recipeName) ?></strong></h6>
+                            <p class="text-muted text-center mb-2">Category: <span class="card-subtitle text-muted"><?php echo htmlspecialchars($categoryName) ?></span></p>
+                            <hr class="my-2">
+                            <div class="text-left" style="max-height: 260px; overflow-y: auto;">
+                                <h6 class="mb-1"><strong>Ingredients</strong></h6>
+                                <p class="small mb-2"><?php echo nl2br(htmlspecialchars($recipeIngredients)) ?></p>
+                                <h6 class="mb-1"><strong>Procedure</strong></h6>
+                                <p class="small mb-0"><?php echo nl2br(htmlspecialchars($recipeProcedure)) ?></p>
+                            </div>
                         </div>
                     </div>
 

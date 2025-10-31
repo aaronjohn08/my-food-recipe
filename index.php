@@ -56,62 +56,56 @@ include('assets/modal.php');
     <section id="home">
         <div class="main">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="image/bg4.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="caption"><strong>Welcome to My Food Recipe</strong></h1>
-                            <p class="caption caption-p">Create delicious recipes with ease using our interactive web application. Simply input the dishes you intend to cook, along with their corresponding ingredients and step-by-step procedures, to ensure a seamless and delightful cooking experience.</p>
+                            <h1 class="caption"><strong>Discover Your Next Favorite Recipe</strong></h1>
+                            <p class="caption caption-p">From breakfast to dinner, appetizers to desserts - unlock a world of culinary possibilities! Save, create, and organize all your recipes in one place. Start cooking something amazing today!</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="image/bg3.jpg" class="d-block w-100" alt="...">d
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="caption"><strong>Learn Web Design</strong></h5>
-                            <p class="caption caption-p">Embark on a journey into the world of web design—a dynamic fusion of creativity and technology. Discover the art of crafting captivating digital experiences through layout, color, and typography. Dive into coding languages like HTML and CSS to bring your imaginative designs to life on the vast canvas of the internet.</p>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
 
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="image/card1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-title text-center"><strong>Ingredients List</strong></h4>
-                                <p class="card-text text-center">This should be detailed and include important information to tell the user how much of each ingredient they should be using.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="card shadow h-100 border-0">
+                            <div class="card-body text-center">
+                                <span class="fa-stack fa-2x mb-3" style="color:#28a745;">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-leaf fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h5 class="card-title"><strong>Smart Ingredients</strong></h5>
+                                <p class="card-text">Get precise ingredient lists with quantities, nutrition info, and alternatives for every recipe.</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="image/card2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-title text-center"><strong>Foods List</strong></h4>
-                                <p class="card-text text-center">This is typically the name of the food the user will be making when they follow the recipe.</p>
+                    <div class="col-md-3 mb-4">
+                        <div class="card shadow h-100 border-0">
+                            <div class="card-body text-center">
+                                <span class="fa-stack fa-2x mb-3" style="color:#007bff;">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-utensils fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h5 class="card-title"><strong>Recipe Explorer</strong></h5>
+                                <p class="card-text">Browse, search, and filter recipes by category, cuisine, or dietary needs. Find your next meal easily!</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="image/card3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4 class="card-title text-center"><strong>Prodedures</strong></h4>
-                                <p class="card-text text-center">These are the steps the user should take and are numbered and ordered chronologically in the way they should be done.</p>
+                    <div class="col-md-3 mb-4">
+                        <div class="card shadow h-100 border-0">
+                            <div class="card-body text-center">
+                                <span class="fa-stack fa-2x mb-3" style="color:#fd7e14;">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-list-ol fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h5 class="card-title"><strong>Step-by-Step Guide</strong></h5>
+                                <p class="card-text">Follow clear, numbered instructions with tips and images for perfect results every time.</p>
                             </div>
                         </div>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
     </section>
