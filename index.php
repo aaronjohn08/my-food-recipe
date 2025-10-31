@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include('conn/conn.php'); 
 include('assets/modal.php'); 
 ?>
@@ -44,9 +45,12 @@ include('assets/modal.php');
                         My Account
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">View Account</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log Out</a>
+                        <?php if (isset($_SESSION['user_id'])): ?>
+                            <a class="dropdown-item" href="logout.php">Log Out</a>
+                        <?php else: ?>
+                            <a class="dropdown-item" href="signup.php">Sign Up</a>
+                            <a class="dropdown-item" href="signin.php">Sign In</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -69,18 +73,6 @@ include('assets/modal.php');
 
             <div class="container mt-5">
                 <div class="row justify-content-center">
-                    <div class="col-md-3 mb-4">
-                        <div class="card shadow h-100 border-0">
-                            <div class="card-body text-center">
-                                <span class="fa-stack fa-2x mb-3" style="color:#28a745;">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-leaf fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <h5 class="card-title"><strong>Smart Ingredients</strong></h5>
-                                <p class="card-text">Get precise ingredient lists with quantities, nutrition info, and alternatives for every recipe.</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-3 mb-4">
                         <div class="card shadow h-100 border-0">
                             <div class="card-body text-center">
@@ -179,6 +171,7 @@ include('assets/modal.php');
         
     </section>
 
+    <?php if (isset($_SESSION['user_id'])): ?>
     <section id="food">
         <div class="card card-food-list">
             <h1 class="text-center"><strong>Food Lists</strong></h1>
@@ -254,6 +247,7 @@ include('assets/modal.php');
         </div>
 
     </section>
+    <?php endif; ?>
     
     
     <script src="assets/script.js"></script>
